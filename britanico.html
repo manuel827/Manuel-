@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inglês Britânico</title>
+  <title>Ease-English</title>
   <style>
-      * {
+    * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -81,25 +81,75 @@
         height: 200px;
       }
     }
-  </style>
-    
+    footer{
+      margin-top:100%
+    }
   </style>
 </head>
 <body>
+
   <header>Ease-English</header>
+
   <nav>
     <a href="britanico.html">Inglês Britânico</a>
     <a href="index.html">Inicial</a>
     <a href="americano.html">Inglês Americano</a>
   </nav>
+
   <div class="content">
-    <h2>Aulas de Inglês Britânico</h2>
-    <p>Vídeos e conteúdos específicos da pronúncia britânica:</p>
-    <iframe src="https://www.youtube.com/embed/british_video_id"></iframe>
+    <h2>Bem-vindo ao Ease-English!</h2>
+    <p> A sua sala de aulas on-line.<br>Assista às aulas diariamente de inglês Britânico:</p><br>
+    <h3>Aprenda connosco a falar o Inglês Britânico na escrita e na pronúncia passo a passo.</h3>
+  </div><br>
+  <p>Aula 001#</p>
+    
+  <!-- Video com ativação do popunder ao clique -->
+  <div onclick="showPopunder()" style="cursor: pointer;">
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0&modestbranding=1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
-  
-  <footer>
+
+  <!-- Banner 300x250 -->
+  <div class="ad-banner">
+    <script type="text/javascript">
+      atOptions = {
+        'key': '9d66bd7530654e5a86b7a04c2a380b58',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/9d66bd7530654e5a86b7a04c2a380b58/invoke.js"></script>
+  </div>
+
+  <!-- Native Ads -->
+  <script async="async" data-cfasync="false" src="//pl26585542.profitableratecpm.com/fb6c00c3b3171aa6b65226b51f42b727/invoke.js"></script>
+  <div id="container-fb6c00c3b3171aa6b65226b51f42b727"></div>
+
+  <!-- Social Bar -->
+  <script type='text/javascript' src='//pl26585532.profitableratecpm.com/7e/67/d7/7e67d731606520c377a991f0380789dc.js'></script>
+
+  <!-- Script Popunder (ativa no 1º clique) -->
+  <script>
+    let popClicked = false;
+    function showPopunder() {
+      if (!popClicked) {
+        popClicked = true;
+        window.open("//pl26585401.profitableratecpm.com/7f/35/ed/7f35ed94fe163f1cc0b6479134049be9", "_blank");
+      }
+    }
+  </script>
+  <p> Serás guiado do básico ao avançado</p>
+
+</body>
+
+<footer>
     Acesse todos os dias para novas videoaulas!
   </footer>
-</body>
 </html>
