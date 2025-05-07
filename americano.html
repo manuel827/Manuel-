@@ -2,65 +2,97 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ease-English - Aula do Dia</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f3f3f3;
+      background: #f9f9f9;
       margin: 0;
       padding: 20px;
       text-align: center;
     }
 
-    header {
-      font-size: 28px;
-      font-weight: bold;
+    h1 {
       color: #2c3e50;
+      font-size: 28px;
       margin-bottom: 20px;
     }
 
-    .video-wrapper {
+    .video-container {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
+      padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
       max-width: 100%;
-      background: #000;
-      margin-bottom: 20px;
     }
 
-    .video-wrapper iframe {
+    .video-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      border: none;
     }
 
-    footer {
-      color: #888;
-      font-size: 14px;
+    .ad-banner {
+      margin: 30px auto;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>Ease-English - Aula do Dia</header>
+  <h1>Ease-English - Aula do Dia</h1>
 
-  <div class="video-wrapper">
-    <iframe 
-      src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0&modestbranding=1&showinfo=0&autohide=1"
-      title="Ease-English Aula"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+  <!-- Video com ativação do popunder ao clique -->
+  <div onclick="showPopunder()" style="cursor: pointer;">
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0&modestbranding=1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 
-  <footer>
-    Acesse todos os dias para novas videoaulas!
-  </footer>
+  <!-- Banner 300x250 -->
+  <div class="ad-banner">
+    <script type="text/javascript">
+      atOptions = {
+        'key': '9d66bd7530654e5a86b7a04c2a380b58',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/9d66bd7530654e5a86b7a04c2a380b58/invoke.js"></script>
+  </div>
+
+  <!-- Native Ads -->
+  <script async="async" data-cfasync="false" src="//pl26585542.profitableratecpm.com/fb6c00c3b3171aa6b65226b51f42b727/invoke.js"></script>
+  <div id="container-fb6c00c3b3171aa6b65226b51f42b727"></div>
+
+  <!-- Social Bar -->
+  <script type='text/javascript' src='//pl26585532.profitableratecpm.com/7e/67/d7/7e67d731606520c377a991f0380789dc.js'></script>
+
+  <!-- Script Popunder (ativa no 1º clique) -->
+  <script>
+    let popClicked = false;
+    function showPopunder() {
+      if (!popClicked) {
+        popClicked = true;
+        window.open("//pl26585401.profitableratecpm.com/7f/35/ed/7f35ed94fe163f1cc0b6479134049be9", "_blank");
+      }
+    }
+  </script>
 
 </body>
 </html>
