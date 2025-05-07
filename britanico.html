@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inglês Britânico</title>
+  <style>
+      * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      padding-top: 120px;
+      text-align: center;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #2c3e50;
+      color: #fff;
+      font-size: 22px;
+      padding: 20px;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    nav {
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background-color: #34495e;
+      z-index: 999;
+    }
+
+    nav a {
+      flex: 1;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      padding: 14px 0;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 315px;
+      border: none;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 20px;
+        padding: 15px;
+      }
+
+      nav a {
+        font-size: 14px;
+        padding: 12px 0;
+      }
+
+      iframe {
+        height: 200px;
+      }
+    }
+  </style>
+    
+  </style>
+</head>
+<body>
+  <header>Ease-English</header>
+  <nav>
+    <a href="britanico.html">Inglês Britânico</a>
+    <a href="index.html">Inicial</a>
+    <a href="americano.html">Inglês Americano</a>
+  </nav>
+  <div class="content">
+    <h2>Aulas de Inglês Britânico</h2>
+    <p>Vídeos e conteúdos específicos da pronúncia britânica:</p>
+    <iframe src="https://www.youtube.com/embed/british_video_id"></iframe>
+  </div>
+  
+  <footer>
+    Acesse todos os dias para novas videoaulas!
+  </footer>
+</body>
+</html>
